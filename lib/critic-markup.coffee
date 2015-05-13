@@ -9,7 +9,8 @@ module.exports = CriticMarkup =
 
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'critic-markup:list-critics': => @listCritics()
+      'critic-markup:list-critics': =>
+        @createCriticMarkupView().toggle(@)
 
   deactivate: ->
     @subscriptions.dispose()
