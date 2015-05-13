@@ -9,11 +9,11 @@ module.exports = CriticMarkup =
 
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'critic-markup:convert': => @convert()
+      'critic-markup:list-critics': => @listCritics()
 
   deactivate: ->
     @subscriptions.dispose()
 
-  list_critics: ->
+  listCritics: ->
     if editor = atom.workspace.getActiveTextEditor()
       editor.insertText('Hello, World!')

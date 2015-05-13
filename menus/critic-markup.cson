@@ -7,7 +7,7 @@
       'submenu': [
         {
           'label': 'List Critics'
-          'command': 'critic-markup:list-critic'
+          'command': 'critic-markup:list-critics'
         }
       ]
     ]

@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "A short description of your package",
   "activationCommands": {
-    "atom-workspace": "critic-markup:list_critics"
+    "atom-workspace": "critic-markup:list-critics"
   },
   "repository": "https://github.com/plttn/critic-markup",
   "license": "MIT",
